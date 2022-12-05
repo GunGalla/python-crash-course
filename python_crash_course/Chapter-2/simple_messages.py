@@ -1,3 +1,4 @@
+# Упражнение 2.2
 message = 'Hello, user!'
 
 print(message)
