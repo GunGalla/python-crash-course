@@ -1,3 +1,4 @@
+# Упражнение 4.2
 animals = ['dog', 'cat', 'parrot']
 
 for animal in animals:

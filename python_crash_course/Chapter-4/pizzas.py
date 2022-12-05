@@ -1,3 +1,4 @@
+# Упражнение 4.1
 pizzas = ['pepperoni', 'bbq', 'margarita']
 
 for pizza in pizzas:
