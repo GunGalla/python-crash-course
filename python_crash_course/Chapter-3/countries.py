@@ -1,4 +1,4 @@
-# Experiments with list
+# Упраждение 3.8
 countries = ['Turkey', 'Bulgaria', 'Austria', 'Poland', 'Belarus']
 
 print(countries)

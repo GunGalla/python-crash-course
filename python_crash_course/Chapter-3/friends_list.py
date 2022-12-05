@@ -1,3 +1,4 @@
+# Упражнения 3.1 и 3.2
 friends = ['Alex', 'Kirill', 'Sasha']
 
 print(friends[0])
