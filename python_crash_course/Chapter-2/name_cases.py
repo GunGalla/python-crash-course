@@ -1,3 +1,4 @@
+# Здесь рассматриваются варианты форматирования текста
 name = 'tirion lannister'
 
 print(f'Hello, {name}, how are you?')
