@@ -42,6 +42,8 @@ print(f'I will be glad to invite you to have a dinner, {guests[5]}!')
 
 print(f'I will be glad to invite you to have a dinner, {guests[6]}!')
 
+print(f'I have invited {len(guests)} guests.')
+
 print('Sorry for inconvenience, but I can invite only two people :(')
 
 feel_sorry = guests.pop()
