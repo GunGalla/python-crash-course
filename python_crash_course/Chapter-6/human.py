@@ -13,7 +13,7 @@ print(human['age'])
 print(human['city'])
 
 favorite_nums = {
-    'Evgenia': 28,
+    'Evgenia': [28, 8],
     'Yaroslav': 8,
     'Vladimir': 2,
     'Kirill': 10,
