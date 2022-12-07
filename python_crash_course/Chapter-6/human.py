@@ -1,4 +1,4 @@
-# Упражнения 6.1 - 6.3
+# Упражнения 6.1 - 6.4
 
 human = {
     'first_name': 'Yaroslav',
@@ -20,4 +20,5 @@ favorite_nums = {
     'Mob': 23,
     }
 
-print(f"Evgenia's favorite number is:\n\t{favorite_nums['Evgenia']}!")
+for name in favorite_nums:
+    print(f"{name}'s favorite number is:\n\t{favorite_nums[name]}!")
