@@ -1,4 +1,4 @@
-# Упражнения 9.1 и 9.2
+# Упражнения 9.1, 9.2 и 9.4
 
 class Restaurant:
     '''Simple restaurant class'''
@@ -6,6 +6,7 @@ class Restaurant:
     def __init__(self, restaurant_name, restaurant_type):
         self.restaurant_name = restaurant_name
         self.restaurant_type = restaurant_type
+        self.number_served = 0
 
     def describe_restaurant(self):
         print(f"This restaurant's name is {self.restaurant_name}!")
@@ -13,6 +14,12 @@ class Restaurant:
 
     def open_restaurant(self):
         print(f'Welcome! {self.restaurant_name.title()} is open for everyone!')
+
+    def set_number_served(self, served_num):
+        self.number_served = served_num
+
+    def increment_number_served(self, served_today):
+        self.number_served += served_today
 
 
 my_restaurant = Restaurant('Twins Garden', 'seafood')
@@ -23,9 +30,13 @@ my_restaurant.describe_restaurant()
 my_restaurant.open_restaurant()
 
 good_restaurant = Restaurant('Beverly Hills', 'BBQ')
-bad_restaurant = Restaurant('Kirkorov', 'Gavno')
-normal_restaurant = Restaurant('Frank', 'Ribs')
-
 good_restaurant.describe_restaurant()
-bad_restaurant.describe_restaurant()
-normal_restaurant.describe_restaurant()
+
+restaurant = Restaurant('Yeger', 'steakhouse')
+print(restaurant.number_served)
+restaurant.number_served = 20
+print(restaurant.number_served)
+restaurant.set_number_served(5)
+print(restaurant.number_served)
+restaurant.increment_number_served(35)
+print(restaurant.number_served)
