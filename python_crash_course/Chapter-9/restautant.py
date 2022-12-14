@@ -40,3 +40,22 @@ restaurant.set_number_served(5)
 print(restaurant.number_served)
 restaurant.increment_number_served(35)
 print(restaurant.number_served)
+
+
+# Упражнение 9.6
+class IceCreamStand(Restaurant):
+
+    def __init__(self, restaurant_name, restaurant_type, *flavors):
+        super().__init__(restaurant_name, restaurant_type)
+        self.flavors = flavors
+
+    def show_flavors(self):
+        print("We have following flavors of ice-cream:")
+        for item in self.flavors:
+            print(f"- {item.title()}")
+
+
+ice_cream_restaurant = IceCreamStand('33 Penguins', 'Gelato', 'chocolate', 'raspberry')
+
+ice_cream_restaurant.show_flavors()
+ice_cream_restaurant.describe_restaurant()

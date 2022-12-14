@@ -38,3 +38,30 @@ person.increment_login_attempts()
 print(person.login_attempts)
 person.reset_login_attempts()
 print(person.login_attempts)
+
+# Упражнение 9.8
+
+
+class Privileges:
+
+    def __init__(self, *privileges):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print('Admin has following privileges:')
+        for item in self.privileges:
+            print(f'- {item.title()}')
+
+# Упражнение 9.7
+
+
+class Admin(User):
+
+    def __init__(self, first_name, last_name, age, country):
+        super().__init__(first_name, last_name, age, country)
+        self.privileges = Privileges('Ban users', 'Delete users', 'Install soft')
+
+
+super_user = Admin('Yaroslav', 'Kasatkin', 30, 'Bulgaria')
+
+super_user.privileges.show_privileges()
