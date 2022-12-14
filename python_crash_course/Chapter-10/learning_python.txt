@@ -1,0 +1,6 @@
+In Python you can create lists.
+In Python you can calculate numbers.
+In Python you can create chatbots.
+In Python you can create web-sites.
+In Python you can do your own projects.
+In Python you can manage your time.
